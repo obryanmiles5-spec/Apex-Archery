@@ -1,0 +1,6 @@
+{
+  "name": "Apex Precision Archery",
+  "description": "Australian-based archery and compound hunting bow e-commerce platform featuring a custom bow selector, international checkout, and technical gear.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
