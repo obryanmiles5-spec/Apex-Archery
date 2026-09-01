@@ -1196,6 +1196,204 @@ const generateProducts = (): Product[] => {
     });
   });
 
+  
+  const lancasterBows = [
+  {
+    "title": "Mathews LIFT 33 Compound Bow",
+    "priceAud": 1950,
+    "priceGbp": 1010,
+    "priceUsd": 1350,
+    "cat": "Compound Bows",
+    "speed": "343 FPS",
+    "weight": "4.06 lbs",
+    "ata": "33\"",
+    "seoKw": "mathews lift 33 compound bow",
+    "image": "https://picsum.photos/seed/MathewsLIFT33CompoundBow/600/600"
+  },
+  {
+    "title": "Hoyt Alpha X 33 Compound Bow",
+    "priceAud": 1999,
+    "priceGbp": 1035,
+    "priceUsd": 1399,
+    "cat": "Compound Bows",
+    "speed": "334 FPS",
+    "weight": "4.75 lbs",
+    "ata": "33\"",
+    "seoKw": "hoyt alpha x 33 compound bow",
+    "image": "https://picsum.photos/seed/HoytAlphaX33CompoundBow/600/600"
+  },
+  {
+    "title": "PSE Mach 34 Carbon Compound Bow",
+    "priceAud": 2450,
+    "priceGbp": 1265,
+    "priceUsd": 1799,
+    "cat": "Compound Bows",
+    "speed": "330 FPS",
+    "weight": "3.65 lbs",
+    "ata": "34\"",
+    "seoKw": "pse mach 34 carbon bow",
+    "image": "https://picsum.photos/seed/PSEMach34CarbonCompoundBow/600/600"
+  },
+  {
+    "title": "Bowtech Core SR Compound Bow",
+    "priceAud": 1850,
+    "priceGbp": 960,
+    "priceUsd": 1299,
+    "cat": "Compound Bows",
+    "speed": "344 FPS",
+    "weight": "4.5 lbs",
+    "ata": "33\"",
+    "seoKw": "bowtech core sr compound bow",
+    "image": "https://picsum.photos/seed/BowtechCoreSRCompoundBow/600/600"
+  },
+  {
+    "title": "Bear Archery Alaskan XT Compound Bow",
+    "priceAud": 750,
+    "priceGbp": 390,
+    "priceUsd": 549,
+    "cat": "Compound Bows",
+    "speed": "335 FPS",
+    "weight": "4.3 lbs",
+    "ata": "32\"",
+    "seoKw": "bear archery alaskan xt",
+    "image": "https://picsum.photos/seed/BearArcheryAlaskanXTCompoundBow/600/600"
+  },
+  {
+    "title": "Hoyt Grand Prix Xceed Recurve Riser",
+    "priceAud": 1250,
+    "priceGbp": 650,
+    "priceUsd": 879,
+    "cat": "Recurve Bows",
+    "speed": "N/A",
+    "weight": "2.8 lbs",
+    "ata": "25\"",
+    "seoKw": "hoyt grand prix xceed riser",
+    "image": "https://picsum.photos/seed/HoytGrandPrixXceedRecurveRiser/600/600"
+  },
+  {
+    "title": "WNS Motive FX Recurve Riser",
+    "priceAud": 450,
+    "priceGbp": 235,
+    "priceUsd": 319,
+    "cat": "Recurve Bows",
+    "speed": "N/A",
+    "weight": "2.47 lbs",
+    "ata": "25\"",
+    "seoKw": "wns motive fx riser",
+    "image": "https://picsum.photos/seed/WNSMotiveFXRecurveRiser/600/600"
+  },
+  {
+    "title": "Galaxy Sage Takedown Recurve Bow",
+    "priceAud": 220,
+    "priceGbp": 115,
+    "priceUsd": 149,
+    "cat": "Recurve Bows",
+    "speed": "N/A",
+    "weight": "2.2 lbs",
+    "ata": "62\"",
+    "seoKw": "galaxy sage takedown recurve bow",
+    "image": "https://picsum.photos/seed/GalaxySageTakedownRecurveBow/600/600"
+  }
+];
+  const lancasterArrows = [
+  {
+    "title": "Easton 5mm Axis Carbon Arrows (Bare Shafts)",
+    "priceAud": 195,
+    "priceGbp": 100,
+    "priceUsd": 139.99,
+    "cat": "Carbon Arrows",
+    "speed": "N/A",
+    "weight": "9.5 gpi",
+    "ata": "N/A",
+    "seoKw": "easton axis 5mm arrows",
+    "image": "https://picsum.photos/seed/Easton5mmAxisCarbonArrows(BareShafts)/600/600"
+  },
+  {
+    "title": "Victory VAP TKO Micro-Diameter Arrows (Fletched)",
+    "priceAud": 265,
+    "priceGbp": 138,
+    "priceUsd": 189.99,
+    "cat": "Carbon Arrows",
+    "speed": "N/A",
+    "weight": "8.7 gpi",
+    "ata": "N/A",
+    "seoKw": "victory vap tko arrows",
+    "image": "https://picsum.photos/seed/VictoryVAPTKOMicro-DiameterArrows(Fletched)/600/600"
+  },
+  {
+    "title": "Gold Tip Hunter XT Carbon Arrows (Fletched)",
+    "priceAud": 145,
+    "priceGbp": 75,
+    "priceUsd": 99.99,
+    "cat": "Carbon Arrows",
+    "speed": "N/A",
+    "weight": "8.9 gpi",
+    "ata": "N/A",
+    "seoKw": "gold tip hunter xt",
+    "image": "https://picsum.photos/seed/GoldTipHunterXTCarbonArrows(Fletched)/600/600"
+  },
+  {
+    "title": "Black Eagle Spartan Carbon Arrows",
+    "priceAud": 185,
+    "priceGbp": 95,
+    "priceUsd": 129.99,
+    "cat": "Carbon Arrows",
+    "speed": "N/A",
+    "weight": "9.0 gpi",
+    "ata": "N/A",
+    "seoKw": "black eagle spartan arrows",
+    "image": "https://picsum.photos/seed/BlackEagleSpartanCarbonArrows/600/600"
+  },
+  {
+    "title": "Easton FMJ 4mm Full Metal Jacket Arrows",
+    "priceAud": 320,
+    "priceGbp": 165,
+    "priceUsd": 229.99,
+    "cat": "Carbon Arrows",
+    "speed": "N/A",
+    "weight": "11.0 gpi",
+    "ata": "N/A",
+    "seoKw": "easton fmj 4mm arrows",
+    "image": "https://picsum.photos/seed/EastonFMJ4mmFullMetalJacketArrows/600/600"
+  }
+];
+  
+  lancasterBows.forEach((b, i) => {
+    products.push({
+      id: `lan-bow-${i}`,
+      title: b.title,
+      price_gbp: b.priceGbp,
+      price_aud: b.priceAud,
+      price_usd: b.priceUsd,
+      category: b.cat,
+      specs: { speed: b.speed, weight: b.weight, ata: b.ata },
+      short_desc: 'Premium archery equipment from Lancaster Archery collection.',
+      full_seo_desc: `The ${b.title} is designed for peak accuracy and durability. Target keywords: ${b.seoKw}.`,
+      meta_title: `${b.title} - Apex Archery Australia`,
+      meta_desc: `Buy the ${b.title} online. Fast global shipping from Australia.`,
+      in_stock: true,
+      image_url: b.image
+    });
+  });
+
+  lancasterArrows.forEach((a, i) => {
+    products.push({
+      id: `lan-arrow-${i}`,
+      title: a.title,
+      price_gbp: a.priceGbp,
+      price_aud: a.priceAud,
+      price_usd: a.priceUsd,
+      category: a.cat,
+      specs: { speed: a.speed, weight: a.weight, ata: a.ata },
+      short_desc: 'Premium carbon arrows from Lancaster Archery collection.',
+      full_seo_desc: `The ${a.title} is designed for ultimate penetration and accuracy. Target keywords: ${a.seoKw}.`,
+      meta_title: `${a.title} - Apex Archery Australia`,
+      meta_desc: `Buy the ${a.title} online. Fast global shipping from Australia.`,
+      in_stock: true,
+      image_url: a.image
+    });
+  });
+
   return products;
 };
 
@@ -1220,12 +1418,13 @@ export const blogPosts: BlogPost[] = [
 ];
 
 export const faqs: Faq[] = [
+  { question: "What is the difference between a recurve bow and a compound bow?", answer: "When comparing a recurve vs compound bow, the main difference is the cam system. A compound bow uses cables and pulleys (cams) to reduce the holding weight at full draw (let-off), making it ideal for hunting. A recurve bow or traditional bow stores energy directly in the curved limbs, requiring you to hold the full draw weight, which is preferred in Olympic archery and traditional archery." },
+  { question: "What is the best recurve bow for beginners?", answer: "For an adult beginner, the best recurve bow is typically a takedown recurve bow, like the Samick Sage recurve bow, Galaxy Sage, or Black Hunter recurve bow. These entry-level recurve bows allow you to start with a low draw weight (e.g. 25 lb or 30 pound recurve bow) and upgrade the limbs as you build strength." },
   { question: "Do I need a firearms license to purchase a compound bow in Australia?", answer: "No. In all Australian states and territories, compound bows are not classified as firearms and do not require a license to purchase, own, or use. However, you must have a lawful reason to possess one (like target shooting or hunting) and use it safely." },
-  { question: "What is the minimum draw weight required to ethically hunt in Australia?", answer: "While state regulations vary slightly, a minimum of 45-50 lbs is generally recommended and legally required for medium game like deer and feral goats, and 50-60+ lbs for larger game like scrub bulls or large boars." },
-  { question: "What is the £100 / $200 minimum order requirement on your store?", answer: "Due to high international and express domestic freight costs for bulky archery equipment, our checkout requires a minimum cart value of £100 GBP (or approx $200 AUD) to process an order." },
-  { question: "Can you ship compound bows and broadheads internationally?", answer: "Yes. We offer Express Global Shipping via DHL. Please ensure you check your local customs regulations regarding the importation of archery equipment and broadheads." },
-  { question: "How do I select the right arrow spine for my bow setup?", answer: "Arrow spine depends on your draw weight, draw length, and the weight of your broadhead/point. Check out our 'Arrow Spine Selection Chart' in the blog, or use our interactive Bow Selector Quiz for a recommendation." },
-  { question: "Are your compound bows covered under manufacturer lifetime limb warranty?", answer: "All flagship compound bows we sell come with the original manufacturer's limited lifetime warranty on the riser and limbs to the original owner. Strings and cables are considered wear items." },
-  { question: "How are hunting bows packaged to prevent damage during long-distance transit?", answer: "Bows are shipped in custom-engineered, heavy-duty double-corrugated cardboard boxes with high-density foam inserts to suspend the cams and riser, ensuring zero damage during express transit." },
-  { question: "Can I adjust the draw weight and draw length myself, or do I need a bow press?", answer: "Draw weight can usually be adjusted at home using an Allen key on the limb bolts. Draw length adjustments depend on the bow model; some feature rotating modules adjustable with an Allen key, while others require a bow press to change modules or cams." },
+  { question: "How do I string a recurve bow safely?", answer: "To string a recurve bow safely, you should always use a bow stringer tool. Do not use the step-through method as it can twist the recurve bow limbs and cause permanent damage. A bow stringer for recurve bow ensures even pressure across the traditional bow while attaching the dacron recurve bow string." },
+  { question: "What is the minimum draw weight required to ethically hunt in Australia?", answer: "For deer hunting with a recurve bow or compound hunting bow in Australia, a minimum of 45-50 lbs (like a 45 pound recurve bow or 50 lb compound bow) is generally legally required for medium game. For larger game like scrub bulls, a 60 lb recurve bow or 70 pound compound bow is highly recommended." },
+  { question: "Where can I buy a bow and arrow in Australia?", answer: "You can buy a bow and arrow directly from our online archery store. We are a leading archery shop supplying compound bows for sale, recurve bows, carbon arrows, and archery accessories with fast shipping to Melbourne, Sydney, Brisbane, Adelaide, and Perth." },
+  { question: "What is the difference between a recurve bow and a longbow?", answer: "A traditional longbow has straight limbs that curve gently to the tips, forming a 'D' shape when strung. A recurve bow has tips that curve away from the archer, providing more speed and a smoother draw. Both fall under traditional archery bows, but recurves generally shoot faster." },
+  { question: "Can you ship compound bows and broadheads internationally?", answer: "Yes. We offer Express Global Shipping via DHL. Please ensure you check your local customs regulations regarding the importation of archery equipment, hunting bows, and broadheads." },
+  { question: "How do I select the right arrow spine for my bow setup?", answer: "Arrow spine depends on your draw weight (e.g. 40 lb bow vs 70lb compound bow), draw length, and the weight of your broadhead. Check out our 'Arrow Spine Chart for Recurve Bows' in our blog, or use our interactive Bow Selector Quiz to find the best arrows for your compound or recurve setup." },
 ];

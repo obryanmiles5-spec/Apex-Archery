@@ -4,13 +4,11 @@ import React, { useState } from "react";
 
 import Image from "next/image";
 
-import { motion } from "framer-motion";
-
 import { ArrowRight, ShoppingCart } from "lucide-react";
 
 import { useCart } from "@/components/CartContext";
 
-import { products } from "@/lib/data";
+import { products, blogPosts } from "@/lib/data";
 
 import { QuickViewModal } from "@/components/QuickViewModal";
 
@@ -49,7 +47,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-[radial-gradient(#4D7C0F_1px,transparent_1px)] [background-size:20px_20px] opacity-[0.03] z-10" />
           <Image
             src="https://drive.google.com/uc?export=view&id=1CEJrTAESL3K7T64CdRN6Cw0ED_047uac"
-            alt="Hunter with compound bow"
+            alt="Hunter with recurve bow"
             fill
             className="object-cover opacity-[0.15] grayscale mix-blend-overlay"
             referrerPolicy="no-referrer"
@@ -58,40 +56,27 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-3xl flex flex-col items-center"
-          >
+          <div className="max-w-3xl flex flex-col items-center">
             <div className="text-[#EA580C] text-[10px] font-bold uppercase tracking-[0.4em] mb-6 flex items-center justify-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-[#EA580C] animate-pulse" />
               Precision Built Since 2008
             </div>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-white tracking-tighter leading-[1.1] mb-6 uppercase text-center">
               Australian Precision. <br />
-              <span className="text-[#4D7C0F]">Worldwide Lethality.</span>
+              <span className="text-[#EA580C]">Worldwide Lethality.</span>
             </h1>
             <p className="text-base text-slate-400 mb-10 max-w-xl leading-relaxed text-center mx-auto">
-              Engineered for the outback. Built for the world. Equip yourself
-              with competition-grade compound bows, micro-diameter carbon
-              arrows, and terminal broadheads.
+              Engineered for the outback. Built for the world. Equip yourself with competition-grade compound bows, micro-diameter carbon arrows, and terminal broadheads.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/shop"
-                className="bg-white text-black font-bold uppercase text-[10px] px-8 py-4 tracking-widest hover:bg-slate-200 transition-colors flex items-center justify-center gap-2"
+                className="bg-[#EA580C] text-white font-bold uppercase text-[12px] px-10 py-5 tracking-widest hover:bg-[#C2410C] transition-colors flex items-center justify-center gap-2"
               >
-                Explore 2026 Fleet <ArrowRight className="w-4 h-4" />
-              </Link>
-              <Link
-                href="/shop"
-                className="border border-slate-600 hover:border-[#EA580C] text-white font-bold uppercase text-[10px] px-8 py-4 tracking-widest transition-colors flex items-center justify-center gap-2"
-              >
-                Configure Custom Rig
+                Shop Now <ShoppingCart className="w-4 h-4" />
               </Link>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -225,6 +210,140 @@ export default function Home() {
             >
               View Full Arsenal
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* 6. Featured Collaboration (Dialed x Apex) */}
+      <section className="relative w-full bg-[#111111] overflow-hidden">
+        {/* Background Image Container */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="https://drive.google.com/uc?export=view&id=1s4rOMHvNqfluwC5UFuIMzQXan25j8Wi8"
+            alt="Dialed Archery x Apex Hunting Collaboration"
+            fill
+            className="object-cover opacity-60"
+            referrerPolicy="no-referrer"
+          />
+          {/* Gradient Overlay for Text Readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent"></div>
+        </div>
+
+        {/* Content Container */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 flex flex-col justify-center min-h-[500px]">
+          <div className="max-w-2xl">
+            <div className="flex items-center gap-4 mb-6">
+              <span className="bg-[#EA580C] text-white text-[10px] font-black px-3 py-1 uppercase tracking-widest">
+                Exclusive Collaboration
+              </span>
+              <span className="text-slate-300 text-[10px] font-bold uppercase tracking-widest border border-slate-700 px-3 py-1">
+                MFD in the USA
+              </span>
+            </div>
+            
+            <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase mb-6 leading-none">
+              Dialed Archery <span className="block text-[#EA580C]">x Apex Hunting</span>
+            </h2>
+            
+            <p className="text-slate-300 md:text-lg mb-8 leading-relaxed max-w-xl">
+              Precision meets performance. We&apos;ve partnered with Dialed Archery Equipment Co. to bring you an exclusive, premium sight collection. Engineered for absolute accuracy in the toughest environments, featuring the signature topographic aesthetic. 
+            </p>
+            
+            <Link
+              href="/shop"
+              className="inline-flex items-center gap-3 bg-white text-black hover:bg-[#EA580C] hover:text-white px-8 py-4 font-black uppercase tracking-widest text-xs transition-colors group"
+            >
+              Shop The Collection
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* 7. Blog Posts Preview */}
+      <section className="py-24 bg-[#0A0A0A] border-t border-slate-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-end mb-12">
+            <div>
+              <h2 className="text-2xl md:text-4xl font-black text-white tracking-tighter uppercase mb-2">
+                Outback <span className="text-[#EA580C]">Intel</span>
+              </h2>
+              <p className="text-slate-400 text-sm uppercase tracking-widest font-bold">
+                Field Notes & Tactics
+              </p>
+            </div>
+            <Link
+              href="/blog"
+              className="hidden sm:flex text-[10px] font-bold uppercase tracking-widest text-slate-300 hover:text-white items-center gap-2 transition-colors group"
+            >
+              Read All Intel{" "}
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {blogPosts.slice(0, 4).map((post) => (
+              <div key={post.id} className="group cursor-pointer">
+                <div className="relative aspect-video w-full mb-4 overflow-hidden border border-slate-800 group-hover:border-[#EA580C]/50 transition-colors">
+                  <Image
+                    src={post.imageUrl}
+                    alt={post.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute top-2 left-2 bg-[#1E293B] text-white text-[9px] font-bold px-2 py-1 uppercase tracking-widest">
+                    {post.readingTime}
+                  </div>
+                </div>
+                <h3 className="text-sm font-bold text-slate-200 uppercase tracking-wide leading-snug group-hover:text-[#EA580C] transition-colors mb-2">
+                  {post.title}
+                </h3>
+                <p className="text-xs text-slate-400 leading-relaxed line-clamp-2 mb-4">
+                  {post.snippet}
+                </p>
+                <Link
+                  href="/blog"
+                  className="text-[10px] font-black uppercase tracking-widest text-[#EA580C] hover:text-white transition-colors flex items-center gap-2"
+                >
+                  Read More <ArrowRight className="w-3 h-3" />
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 8. SEO Foundation Block */}
+      <section className="bg-[#050505] py-24 border-t border-slate-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+            <div>
+              <h2 className="text-xl font-bold text-white uppercase tracking-wider mb-6">
+                Australia's Premier Archery Shop
+              </h2>
+              <div className="text-slate-400 text-sm leading-relaxed space-y-4">
+                <p>
+                  Whether you are searching for the <strong>best recurve bow for beginners</strong>, a high-performance <strong>compound hunting bow</strong>, or traditional <strong>longbows for sale</strong>, our <strong>archery shop</strong> is your ultimate destination. We proudly supply top-tier archery gear across <strong>Melbourne, Sydney, Brisbane, Perth, and Adelaide</strong>. Our extensive catalogue includes legendary brands like <strong>Bear Archery</strong>, <strong>Hoyt</strong>, <strong>Mathews</strong>, <strong>PSE</strong>, and the iconic <strong>Samick Sage takedown recurve bow</strong>.
+                </p>
+                <p>
+                  From <strong>target archery recurve bows</strong> and <strong>wooden bows</strong> to high-penetration <strong>micro-diameter carbon arrows</strong>, we cover every discipline. Explore our range of <strong>youth compound bows</strong>, <strong>traditional archery bows</strong>, <strong>bowfishing kits</strong>, and premium <strong>archery accessories</strong>. If you are comparing a <strong>recurve vs compound bow</strong>, our expert staff and comprehensive guides will help you make the right choice.
+                </p>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-xl font-bold text-white uppercase tracking-wider mb-6">
+                Equip For The Outback
+              </h2>
+              <div className="text-slate-400 text-sm leading-relaxed space-y-4">
+                <p>
+                  We know Australian conditions demand rugged reliability. That's why we stock the <strong>best hunting recurve bows</strong> and durable <strong>compound bows for hunting</strong> feral game. Need to know <strong>how to string a recurve bow safely</strong>? We offer a massive selection of <strong>bow stringers</strong>, <strong>finger tabs</strong>, <strong>arrow rests</strong>, and <strong>custom recurve bow strings</strong> to ensure your setup is dialed in perfectly.
+                </p>
+                <p>
+                  Looking for a <strong>cheap recurve bow</strong> to get started, or searching for <strong>used compound bows for sale</strong>? We cater to all budgets. Visit our <strong>archery store</strong> online to <strong>buy a bow and arrow</strong> with confidence. Fast shipping Australia-wide ensures you spend less time waiting and more time shooting.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
